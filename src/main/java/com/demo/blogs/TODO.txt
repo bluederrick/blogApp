@@ -1,0 +1,21 @@
+#create schema for the tables below
+
+Blog
+BlogID     int auto number PK
+BlogName   string
+...
+
+BlogPost
+BlogPostID   int auto number PK
+BlogID       int FK to Blog.BlogID, index
+BlogContent  string
+....
+
+Comment
+CommentID       int auto number PK
+BlogPostID      int FK to BlogPost.BlogPostID, index
+ReplyToCommentID int FK to Comment.CommentID
+
+
+
+change postStatus to boolean
