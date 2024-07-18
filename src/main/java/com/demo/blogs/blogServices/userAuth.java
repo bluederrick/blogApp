@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 @Component
 public interface userAuth {
 
-   public  String userAuthentification(String email , String Password);
+   public  String userAuthentification(String UserEmail) ;
 }
 

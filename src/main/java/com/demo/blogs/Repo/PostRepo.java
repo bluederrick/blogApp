@@ -2,6 +2,11 @@ package com.demo.blogs.Repo;
 
 import com.demo.blogs.blogEntity.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface PostRepo  extends JpaRepository<Integer , Post> {
+import java.util.List;
+
+@Repository
+public interface PostRepo  extends JpaRepository<Post,Long> {
+//    List<Post>findAll();
 }
